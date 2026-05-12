@@ -11,7 +11,7 @@
   <a href="https://github.com/sleepinginsummer/agent-ssh-cli/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green" alt="License MIT"></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-%3E%3D18-339933?logo=node.js&logoColor=white" alt="Node.js >=18"></a>
   <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/npm-%3E%3D8-CB3837?logo=npm&logoColor=white" alt="npm >=8"></a>
-  <a href="https://github.com/sleepinginsummer/agent-ssh-cli"><img src="https://img.shields.io/badge/Windows-MacOS-0078D6?labelColor=0078D6&color=C0C0C0" alt="Windows/MacOS"></a>
+  <a href="https://github.com/sleepinginsummer/agent-ssh-cli"><img src="https://img.shields.io/badge/Windows-macOS-Linux-0078D6?labelColor=0078D6&color=C0C0C0" alt="Windows/macOS/Linux"></a>
   <a href="https://github.com/sleepinginsummer/agent-ssh-cli/releases"><img src="https://img.shields.io/badge/release-v0.2.0-blue" alt="release v0.2.0"></a>
   <a href="https://github.com/sleepinginsummer/agent-ssh-cli/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs welcome"></a>
 </p>
@@ -54,6 +54,7 @@
 - 如使用私钥认证，私钥文件需对当前用户可读
 - 当前版本内部执行器已迁移到 Rust，npm 仍作为安装入口
 - `agentsshcli exec/upload/download` 默认使用 Rust daemon 连接缓存，也可以通过 `--no-cache` 直连
+- 预编译平台包支持 macOS arm64/x64、Linux x64/arm64、Windows x64
 
 ### 安装步骤
 
@@ -104,7 +105,7 @@ npm pack --dry-run
 (cd npm/darwin-arm64 && npm pack --dry-run)
 ```
 
-发布形态为主包 `agent-ssh-cli` 加平台 optional 子包，例如 `@agent-ssh-cli/darwin-arm64`、`@agent-ssh-cli/linux-arm64`。预编译产物目录格式：`native-bin/<platform>-<arch>/agentsshcli-native`，Windows 文件名为 `agentsshcli-native.exe`。
+发布形态为主包 `agent-ssh-cli` 加平台 optional 子包：`@agent-ssh-cli/darwin-arm64`、`@agent-ssh-cli/darwin-x64`、`@agent-ssh-cli/linux-x64`、`@agent-ssh-cli/linux-arm64`、`@agent-ssh-cli/win32-x64`。预编译产物目录格式：`native-bin/<platform>-<arch>/agentsshcli-native`，Windows 文件名为 `agentsshcli-native.exe`。
 
 ## 配置
 
