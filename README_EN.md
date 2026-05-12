@@ -105,7 +105,7 @@ npm pack --dry-run
 (cd npm/darwin-arm64 && npm pack --dry-run)
 ```
 
-The publish layout is the main `agent-ssh-cli` package plus optional platform packages such as `@agent-ssh-cli/darwin-arm64`. Prebuilt binaries use this layout: `native-bin/<platform>-<arch>/agentsshcli-native`; Windows uses `agentsshcli-native.exe`.
+The publish layout is the main `agent-ssh-cli` package plus optional platform packages such as `@agent-ssh-cli/darwin-arm64` and `@agent-ssh-cli/linux-arm64`. Prebuilt binaries use this layout: `native-bin/<platform>-<arch>/agentsshcli-native`; Windows uses `agentsshcli-native.exe`.
 
 ## Configuration
 

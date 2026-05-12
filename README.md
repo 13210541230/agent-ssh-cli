@@ -104,7 +104,7 @@ npm pack --dry-run
 (cd npm/darwin-arm64 && npm pack --dry-run)
 ```
 
-发布形态为主包 `agent-ssh-cli` 加平台 optional 子包，例如 `@agent-ssh-cli/darwin-arm64`。预编译产物目录格式：`native-bin/<platform>-<arch>/agentsshcli-native`，Windows 文件名为 `agentsshcli-native.exe`。
+发布形态为主包 `agent-ssh-cli` 加平台 optional 子包，例如 `@agent-ssh-cli/darwin-arm64`、`@agent-ssh-cli/linux-arm64`。预编译产物目录格式：`native-bin/<platform>-<arch>/agentsshcli-native`，Windows 文件名为 `agentsshcli-native.exe`。
 
 ## 配置
 

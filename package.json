@@ -26,6 +26,7 @@
     "@agent-ssh-cli/darwin-arm64": "0.2.0",
     "@agent-ssh-cli/darwin-x64": "0.2.0",
     "@agent-ssh-cli/linux-x64": "0.2.0",
-    "@agent-ssh-cli/win32-x64": "0.2.0"
+    "@agent-ssh-cli/win32-x64": "0.2.0",
+    "@agent-ssh-cli/linux-arm64": "0.2.0"
   }
 }
