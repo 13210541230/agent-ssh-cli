@@ -14,12 +14,15 @@
   "files": [
     "bin/",
     "example.config.json",
-    "README.md"
+    "README.md",
+    "SKILL.md",
+    "scripts/postinstall.js"
   ],
   "bin": {
     "agentsshcli": "bin/agentsshcli.js"
   },
   "scripts": {
+    "postinstall": "node scripts/postinstall.js",
     "test": "node --check bin/agentsshcli.js && cargo test --manifest-path native/Cargo.toml",
     "build:native": "cargo build --release --manifest-path native/Cargo.toml",
     "test:native": "cargo test --manifest-path native/Cargo.toml",
